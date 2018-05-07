@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* LAYOUT */
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, [group] minmax(5em, 1fr));
+    grid-template-rows: repeat(7, [period] 1fr) [row6x] 1fr [row7x] 1fr;
+    grid-gap: 0.5em;
+    counter-reset: atomic-number;
+}
+
+/* Pseudo-element to force elements 57 and 89 to shift right; see https://stackoverflow.com/a/49566478/404623 */
+.periodic-table::before {
+    content: '';
+    grid-row: row6x / span 2;
+    grid-column: 1 / 3;
+}
+
+.element {
+    border: thin solid black;
+    text-align: center;
+    opacity: 0.85;
+}
+
+.element:hover, .element:focus {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.element-name {
+    border-bottom: none !important;
+    text-decoration: none !important;
+    word-break: break-all;
+    hyphens: auto;
+    font-size: 1.5em;
+    counter-increment: atomic-number;
+}
+
+.element-name::before {
+    font-size: 0.8rem;
+    display: block;
+    content: counter(atomic-number);
+    color: black;
+}
+
+.element-name::after {
+    font-size: 0.85rem;
+    display: block;
+    content: attr(title);
+}
+
+/* Footnote indicators for lanthanide and actinide groups */
+
+.element-57, .element-89 {
+    position: relative;
+}
+
+.element-57::before, .element-89::before, .element-57::after, .element-89::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    font-size: 1em;
+    top: 25%;
+    font-weight: normal !important;
+}
+
+.element-57::before, .element-89::before {
+    top: calc(-200% - 1rem);
+}
+
+.element-57::before, .element-57::after {
+    content: '*';
+}
+
+.element-89::before, .element-89::after {
+    content: '**';
+}
+
+.element-57::after, .element-89::after {
+    left: calc(-50% - 1rem);
+}
+
+/* Special positioning of certain elements */
+
+.element-5, .element-13 { grid-column: 13; }
+.element-72, .element-104 { grid-column: 4; }
+.lanthanide-group {
+    grid-row: row6x;
+    position: relative;
+    top: 1em;
+}
+.actinide-group {
+    grid-row: row7x;
+    position: relative;
+    top: 1em;
+}
+
+.noble-gas { grid-column: 18; }
+
+/* LEGEND */
+
+.legend {
+    grid-row: 1 / 3;
+    grid-column: 5 / span 6;
+    border: medium ridge black;
+    padding: 0.5em;
+}
+
+.legend h2 {
+    margin: 0;
+}
+
+.legend ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.legend li {
+    display: inline-block;
+    padding: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+/* COLORS */
+
+.lanthanide { background-color: pink; }
+.actinide { background-color: hotpink; }
+.alkali-metal { background-color: #f66; }
+.alkaline-earth-metal { background-color: #ffdead; }
+.diatomic-nonmetal { background-color: #e7ff8f; }
+.polyatomic-nonmetal { background-color: #a1ffc3; }
+.post-transition-metal { background-color: lightgray; }
+.metalloid { background-color: #cc9; }
+.noble-gas { background-color: #c0ffff; }
+
+.liquid { color: darkgreen; }
+.gas { color: #c00; }
