@@ -1,381 +1,389 @@
 <!DOCTYPE html>
-<meta charset='utf-8'>
-<meta http-equiv='Content-Security-Policy' content="default-src 'self'; script-src 'none'">
-<link rel='stylesheet' type='text/css' href='styles.css'>
-<title>Periodic table with CSS Grid</title>
+<html lang="en-US">
 
-<main>
-    <h1 id='page-title'>Periodic table using CSS Grid</h1>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Periodic table with CSS Grid</title>
+</head>
 
-    <section class='periodic-table' aria-labelledby='page-title'>
-        <div tabindex='0' class='element element-1 diatomic-nonmetal gas'>
-            <abbr class='element-name' title='Hydrogen'>H</abbr>
-        </div>
-        <div tabindex='0' class='element element-2 noble-gas gas'>
-            <abbr class='element-name' title='Helium'>He</abbr>
-        </div>
-        <div tabindex='0' class='element element-3 alkali-metal'>
-            <abbr class='element-name' title='Lithium'>Li</abbr>
-        </div>
-        <div tabindex='0' class='element element-4 alkaline-earth-metal'>
-            <abbr class='element-name' title='Beryllium'>Be</abbr>
-        </div>
-        <div tabindex='0' class='element element-5 metalloid'>
-            <abbr class='element-name' title='Boron'>B</abbr>
-        </div>
-        <div tabindex='0' class='element element-6 polyatomic-nonmetal'>
-            <abbr class='element-name' title='Carbon'>C</abbr>
-        </div>
-        <div tabindex='0' class='element element-7 diatomic-nonmetal gas'>
-            <abbr class='element-name' title='Nitrogen'>N</abbr>
-        </div>
-        <div tabindex='0' class='element element-8 diatomic-nonmetal gas'>
-            <abbr class='element-name' title='Oxygen'>O</abbr>
-        </div>
-        <div tabindex='0' class='element element-9 diatomic-nonmetal gas'>
-            <abbr class='element-name' title='Fluorine'>F</abbr>
-        </div>
-        <div tabindex='0' class='element element-10 noble-gas gas'>
-            <abbr class='element-name' title='Neon'>Ne</abbr>
-        </div>
-        <div tabindex='0' class='element element-11 alkali-metal'>
-            <abbr class='element-name' title='Sodium'>Na</abbr>
-        </div>
-        <div tabindex='0' class='element element-12 alkaline-earth-metal'>
-            <abbr class='element-name' title='Magnesium'>Mg</abbr>
-        </div>
-        <div tabindex='0' class='element element-13 post-transition-metal'>
-            <abbr class='element-name' title='Aluminium'>Al</abbr>
-        </div>
-        <div tabindex='0' class='element element-14 metalloid'>
-            <abbr class='element-name' title='Silicon'>Si</abbr>
-        </div>
-        <div tabindex='0' class='element element-15 polyatomic-nonmetal'>
-            <abbr class='element-name' title='Phosphorus'>P</abbr>
-        </div>
-        <div tabindex='0' class='element element-16 polyatomic-nonmetal'>
-            <abbr class='element-name' title='Sulfur'>S</abbr>
-        </div>
-        <div tabindex='0' class='element element-17 diatomic-nonmetal gas'>
-            <abbr class='element-name' title='Chlorine'>Cl</abbr>
-        </div>
-        <div tabindex='0' class='element element-18 noble-gas gas'>
-            <abbr class='element-name' title='Argon'>Ar</abbr>
-        </div>
-        <div tabindex='0' class='element element-19 alkali-metal'>
-            <abbr class='element-name' title='Potassium'>K</abbr>
-        </div>
-        <div tabindex='0' class='element element-20 alkaline-earth-metal'>
-            <abbr class='element-name' title='Calcium'>Ca</abbr>
-        </div>
-        <div tabindex='0' class='element element-21'>
-            <abbr class='element-name' title='Scandium'>Sc</abbr>
-        </div>
-        <div tabindex='0' class='element element-22'>
-            <abbr class='element-name' title='Titanium'>Ti</abbr>
-        </div>
-        <div tabindex='0' class='element element-23'>
-            <abbr class='element-name' title='Vanadium'>V</abbr>
-        </div>
-        <div tabindex='0' class='element element-24'>
-            <abbr class='element-name' title='Chromium'>Cr</abbr>
-        </div>
-        <div tabindex='0' class='element element-25'>
-            <abbr class='element-name' title='Manganese'>Mn</abbr>
-        </div>
-        <div tabindex='0' class='element element-26'>
-            <abbr class='element-name' title='Iron'>Fe</abbr>
-        </div>
-        <div tabindex='0' class='element element-27'>
-            <abbr class='element-name' title='Cobalt'>Co</abbr>
-        </div>
-        <div tabindex='0' class='element element-28'>
-            <abbr class='element-name' title='Nickel'>Ni</abbr>
-        </div>
-        <div tabindex='0' class='element element-29'>
-            <abbr class='element-name' title='Copper'>Cu</abbr>
-        </div>
-        <div tabindex='0' class='element element-30 post-transition-metal'>
-            <abbr class='element-name' title='Zinc'>Zn</abbr>
-        </div>
-        <div tabindex='0' class='element element-31 post-transition-metal'>
-            <abbr class='element-name' title='Gallium'>Ga</abbr>
-        </div>
-        <div tabindex='0' class='element element-32 metalloid'>
-            <abbr class='element-name' title='Germanium'>Ge</abbr>
-        </div>
-        <div tabindex='0' class='element element-33 metalloid'>
-            <abbr class='element-name' title='Arsenic'>As</abbr>
-        </div>
-        <div tabindex='0' class='element element-34 polyatomic-nonmetal'>
-            <abbr class='element-name' title='Selenium'>Se</abbr>
-        </div>
-        <div tabindex='0' class='element element-35 diatomic-nonmetal liquid'>
-            <abbr class='element-name' title='Bromine'>Br</abbr>
-        </div>
-        <div tabindex='0' class='element element-36 noble-gas gas'>
-            <abbr class='element-name' title='Krypton'>Kr</abbr>
-        </div>
-        <div tabindex='0' class='element element-37 alkali-metal'>
-            <abbr class='element-name' title='Rubidium'>Rb</abbr>
-        </div>
-        <div tabindex='0' class='element element-38 alkaline-earth-metal'>
-            <abbr class='element-name' title='Strontium'>Sr</abbr>
-        </div>
-        <div tabindex='0' class='element element-39'>
-            <abbr class='element-name' title='Yttrium'>Y</abbr>
-        </div>
-        <div tabindex='0' class='element element-40'>
-            <abbr class='element-name' title='Zirconium'>Zr</abbr>
-        </div>
-        <div tabindex='0' class='element element-41'>
-            <abbr class='element-name' title='Niobium'>Nb</abbr>
-        </div>
-        <div tabindex='0' class='element element-42'>
-            <abbr class='element-name' title='Molybdenum'>Mo</abbr>
-        </div>
-        <div tabindex='0' class='element element-43'>
-            <abbr class='element-name' title='Technetium'>Tc</abbr>
-        </div>
-        <div tabindex='0' class='element element-44'>
-            <abbr class='element-name' title='Ruthenium'>Ru</abbr>
-        </div>
-        <div tabindex='0' class='element element-45'>
-            <abbr class='element-name' title='Rhodium'>Rh</abbr>
-        </div>
-        <div tabindex='0' class='element element-46'>
-            <abbr class='element-name' title='Palladium'>Pd</abbr>
-        </div>
-        <div tabindex='0' class='element element-47'>
-            <abbr class='element-name' title='Silver'>Ag</abbr>
-        </div>
-        <div tabindex='0' class='element element-48 post-transition-metal'>
-            <abbr class='element-name' title='Cadmium'>Cd</abbr>
-        </div>
-        <div tabindex='0' class='element element-49 post-transition-metal'>
-            <abbr class='element-name' title='Indium'>In</abbr>
-        </div>
-        <div tabindex='0' class='element element-50 post-transition-metal'>
-            <abbr class='element-name' title='Tin'>Sn</abbr>
-        </div>
-        <div tabindex='0' class='element element-51 metalloid'>
-            <abbr class='element-name' title='Antimony'>Sb</abbr>
-        </div>
-        <div tabindex='0' class='element element-52 metalloid'>
-            <abbr class='element-name' title='Tellurium'>Te</abbr>
-        </div>
-        <div tabindex='0' class='element element-53 diatomic-nonmetal'>
-            <abbr class='element-name' title='Iodine'>I</abbr>
-        </div>
-        <div tabindex='0' class='element element-54 noble-gas gas'>
-            <abbr class='element-name' title='Xenon'>Xe</abbr>
-        </div>
-        <div tabindex='0' class='element element-55 alkali-metal'>
-            <abbr class='element-name' title='Cesium'>Cs</abbr>
-        </div>
-        <div tabindex='0' class='element element-56 alkaline-earth-metal'>
-            <abbr class='element-name' title='Barium'>Ba</abbr>
-        </div>
-        <div tabindex='0' class='element element-57 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Lanthanum'>La</abbr>
-        </div>
-        <div tabindex='0' class='element element-58 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Cerium'>Ce</abbr>
-        </div>
-        <div tabindex='0' class='element element-59 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Praseodymium'>Pr</abbr>
-        </div>
-        <div tabindex='0' class='element element-60 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Neodymium'>Nd</abbr>
-        </div>
-        <div tabindex='0' class='element element-61 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Promethium'>Pm</abbr>
-        </div>
-        <div tabindex='0' class='element element-62 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Samarium'>Sm</abbr>
-        </div>
-        <div tabindex='0' class='element element-63 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Europium'>Eu</abbr>
-        </div>
-        <div tabindex='0' class='element element-64 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Gadolinium'>Gd</abbr>
-        </div>
-        <div tabindex='0' class='element element-65 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Terbium'>Tb</abbr>
-        </div>
-        <div tabindex='0' class='element element-66 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Dysprosium'>Dy</abbr>
-        </div>
-        <div tabindex='0' class='element element-67 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Holmium'>Ho</abbr>
-        </div>
-        <div tabindex='0' class='element element-68 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Erbium'>Er</abbr>
-        </div>
-        <div tabindex='0' class='element element-69 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Thulium'>Tm</abbr>
-        </div>
-        <div tabindex='0' class='element element-70 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Ytterbium'>Yb</abbr>
-        </div>
-        <div tabindex='0' class='element element-71 lanthanide lanthanide-group'>
-            <abbr class='element-name' title='Lutetium'>Lu</abbr>
-        </div>
-        <div tabindex='0' class='element element-72'>
-            <abbr class='element-name' title='Hafnium'>Hf</abbr>
-        </div>
-        <div tabindex='0' class='element element-73'>
-            <abbr class='element-name' title='Tantalum'>Ta</abbr>
-        </div>
-        <div tabindex='0' class='element element-74'>
-            <abbr class='element-name' title='Tungsten'>W</abbr>
-        </div>
-        <div tabindex='0' class='element element-75'>
-            <abbr class='element-name' title='Rhenium'>Re</abbr>
-        </div>
-        <div tabindex='0' class='element element-76'>
-            <abbr class='element-name' title='Osmium'>Os</abbr>
-        </div>
-        <div tabindex='0' class='element element-77'>
-            <abbr class='element-name' title='Iridium'>Ir</abbr>
-        </div>
-        <div tabindex='0' class='element element-78'>
-            <abbr class='element-name' title='Platinum'>Pt</abbr>
-        </div>
-        <div tabindex='0' class='element element-79'>
-            <abbr class='element-name' title='Gold'>Au</abbr>
-        </div>
-        <div tabindex='0' class='element element-80 post-transition-metal liquid'>
-            <abbr class='element-name' title='Mercury'>Hg</abbr>
-        </div>
-        <div tabindex='0' class='element element-81 post-transition-metal'>
-            <abbr class='element-name' title='Thallium'>Tl</abbr>
-        </div>
-        <div tabindex='0' class='element element-82 post-transition-metal'>
-            <abbr class='element-name' title='Lead'>Pb</abbr>
-        </div>
-        <div tabindex='0' class='element element-83 post-transition-metal'>
-            <abbr class='element-name' title='Bismuth'>Bi</abbr>
-        </div>
-        <div tabindex='0' class='element element-84 post-transition-metal'>
-            <abbr class='element-name' title='Polonium'>Po</abbr>
-        </div>
-        <div tabindex='0' class='element element-85 metalloid'>
-            <abbr class='element-name' title='Astatine'>At</abbr>
-        </div>
-        <div tabindex='0' class='element element-86 noble-gas gas'>
-            <abbr class='element-name' title='Radon'>Rn</abbr>
-        </div>
-        <div tabindex='0' class='element element-87 alkali-metal'>
-            <abbr class='element-name' title='Francium'>Fr</abbr>
-        </div>
-        <div tabindex='0' class='element element-88 alkaline-earth-metal'>
-            <abbr class='element-name' title='Radium'>Ra</abbr>
-        </div>
-        <div tabindex='0' class='element element-89 actinide actinide-group'>
-            <abbr class='element-name' title='Actinium'>Ac</abbr>
-        </div>
-        <div tabindex='0' class='element element-90 actinide actinide-group'>
-            <abbr class='element-name' title='Thorium'>Th</abbr>
-        </div>
-        <div tabindex='0' class='element element-91 actinide actinide-group'>
-            <abbr class='element-name' title='Protactinium'>Pa</abbr>
-        </div>
-        <div tabindex='0' class='element element-92 actinide actinide-group'>
-            <abbr class='element-name' title='Uranium'>U</abbr>
-        </div>
-        <div tabindex='0' class='element element-93 actinide actinide-group'>
-            <abbr class='element-name' title='Neptunium'>Np</abbr>
-        </div>
-        <div tabindex='0' class='element element-94 actinide actinide-group'>
-            <abbr class='element-name' title='Plutonium'>Pu</abbr>
-        </div>
-        <div tabindex='0' class='element element-95 actinide actinide-group'>
-            <abbr class='element-name' title='Americium'>Am</abbr>
-        </div>
-        <div tabindex='0' class='element element-96 actinide actinide-group'>
-            <abbr class='element-name' title='Curium'>Cm</abbr>
-        </div>
-        <div tabindex='0' class='element element-97 actinide actinide-group'>
-            <abbr class='element-name' title='Berkelium'>Bk</abbr>
-        </div>
-        <div tabindex='0' class='element element-98 actinide actinide-group'>
-            <abbr class='element-name' title='Californium'>Cf</abbr>
-        </div>
-        <div tabindex='0' class='element element-99 actinide actinide-group'>
-            <abbr class='element-name' title='Einsteinium'>Es</abbr>
-        </div>
-        <div tabindex='0' class='element element-100 actinide actinide-group'>
-            <abbr class='element-name' title='Fermium'>Fm</abbr>
-        </div>
-        <div tabindex='0' class='element element-101 actinide actinide-group'>
-            <abbr class='element-name' title='Mendelevium'>Md</abbr>
-        </div>
-        <div tabindex='0' class='element element-102 actinide actinide-group'>
-            <abbr class='element-name' title='Nobelium'>No</abbr>
-        </div>
-        <div tabindex='0' class='element element-103 actinide actinide-group'>
-            <abbr class='element-name' title='Lawrencium'>Lr</abbr>
-        </div>
-        <div tabindex='0' class='element element-104'>
-            <abbr class='element-name' title='Rutherfordium'>Rf</abbr>
-        </div>
-        <div tabindex='0' class='element element-105'>
-            <abbr class='element-name' title='Dubnium'>Db</abbr>
-        </div>
-        <div tabindex='0' class='element element-106'>
-            <abbr class='element-name' title='Seaborgium'>Sg</abbr>
-        </div>
-        <div tabindex='0' class='element element-107'>
-            <abbr class='element-name' title='Bohrium'>Bh</abbr>
-        </div>
-        <div tabindex='0' class='element element-108'>
-            <abbr class='element-name' title='Hassium'>Hs</abbr>
-        </div>
-        <div tabindex='0' class='element element-109'>
-            <abbr class='element-name' title='Meitnerium'>Mt</abbr>
-        </div>
-        <div tabindex='0' class='element element-110'>
-            <abbr class='element-name' title='Darmstadtium'>Ds</abbr>
-        </div>
-        <div tabindex='0' class='element element-111'>
-            <abbr class='element-name' title='Roentgenium'>Rg</abbr>
-        </div>
-        <div tabindex='0' class='element element-112 post-transition-metal'>
-            <abbr class='element-name' title='Copernicium'>Cn</abbr>
-        </div>
-        <div tabindex='0' class='element element-113'>
-            <abbr class='element-name' title='Nihonium'>Nh</abbr>
-        </div>
-        <div tabindex='0' class='element element-114'>
-            <abbr class='element-name' title='Flerovium'>Fl</abbr>
-        </div>
-        <div tabindex='0' class='element element-115'>
-            <abbr class='element-name' title='Moscovium'>Mc</abbr>
-        </div>
-        <div tabindex='0' class='element element-116'>
-            <abbr class='element-name' title='Livermorium'>Lv</abbr>
-        </div>
-        <div tabindex='0' class='element element-117'>
-            <abbr class='element-name' title='Tennessine'>Ts</abbr>
-        </div>
-        <div tabindex='0' class='element element-118'>
-            <abbr class='element-name' title='Oganesson'>Og</abbr>
-        </div>
+<body>
+  <main>
+    <h1 id="page-title">Periodic table using CSS Grid</h1>
 
-        <aside class='legend'>
-            <h2>Legend</h2>
-            <ul>
-                <li class='alkali-metal'>Alkali metal</li>
-                <li class='alkaline-earth-metal'>Alkaline earth metal</li>
-                <li class='lanthanide'>Lanthanide</li>
-                <li class='actinide'>Actinide</li>
-                <li class='metalloid'>Metalloid</li>
-                <li class='post-transition-metal'>Post-transition metal</li>
-                <li class='polyatomic-nonmetal'>Polyatomic nonmetal</li>
-                <li class='diatomic-nonmetal'>Diatomic nonmetal</li>
-                <li class='noble-gas'>Noble gas</li>
-            </ul>
-        </aside>
+    <section id="periodic-table" class="periodic-table" aria-labelledby="page-title">
+      <div tabindex="0" class="element element-1 diatomic-nonmetal gas">
+        <abbr class="element-name" title="Hydrogen">H</abbr>
+      </div>
+      <div tabindex="0" class="element element-2 noble-gas gas">
+        <abbr class="element-name" title="Helium">He</abbr>
+      </div>
+      <div tabindex="0" class="element element-3 alkali-metal">
+        <abbr class="element-name" title="Lithium">Li</abbr>
+      </div>
+      <div tabindex="0" class="element element-4 alkaline-earth-metal">
+        <abbr class="element-name" title="Beryllium">Be</abbr>
+      </div>
+      <div tabindex="0" class="element element-5 metalloid">
+        <abbr class="element-name" title="Boron">B</abbr>
+      </div>
+      <div tabindex="0" class="element element-6 polyatomic-nonmetal">
+        <abbr class="element-name" title="Carbon">C</abbr>
+      </div>
+      <div tabindex="0" class="element element-7 diatomic-nonmetal gas">
+        <abbr class="element-name" title="Nitrogen">N</abbr>
+      </div>
+      <div tabindex="0" class="element element-8 diatomic-nonmetal gas">
+        <abbr class="element-name" title="Oxygen">O</abbr>
+      </div>
+      <div tabindex="0" class="element element-9 diatomic-nonmetal gas">
+        <abbr class="element-name" title="Fluorine">F</abbr>
+      </div>
+      <div tabindex="0" class="element element-10 noble-gas gas">
+        <abbr class="element-name" title="Neon">Ne</abbr>
+      </div>
+      <div tabindex="0" class="element element-11 alkali-metal">
+        <abbr class="element-name" title="Sodium">Na</abbr>
+      </div>
+      <div tabindex="0" class="element element-12 alkaline-earth-metal">
+        <abbr class="element-name" title="Magnesium">Mg</abbr>
+      </div>
+      <div tabindex="0" class="element element-13 post-transition-metal">
+        <abbr class="element-name" title="Aluminium">Al</abbr>
+      </div>
+      <div tabindex="0" class="element element-14 metalloid">
+        <abbr class="element-name" title="Silicon">Si</abbr>
+      </div>
+      <div tabindex="0" class="element element-15 polyatomic-nonmetal">
+        <abbr class="element-name" title="Phosphorus">P</abbr>
+      </div>
+      <div tabindex="0" class="element element-16 polyatomic-nonmetal">
+        <abbr class="element-name" title="Sulfur">S</abbr>
+      </div>
+      <div tabindex="0" class="element element-17 diatomic-nonmetal gas">
+        <abbr class="element-name" title="Chlorine">Cl</abbr>
+      </div>
+      <div tabindex="0" class="element element-18 noble-gas gas">
+        <abbr class="element-name" title="Argon">Ar</abbr>
+      </div>
+      <div tabindex="0" class="element element-19 alkali-metal">
+        <abbr class="element-name" title="Potassium">K</abbr>
+      </div>
+      <div tabindex="0" class="element element-20 alkaline-earth-metal">
+        <abbr class="element-name" title="Calcium">Ca</abbr>
+      </div>
+      <div tabindex="0" class="element element-21">
+        <abbr class="element-name" title="Scandium">Sc</abbr>
+      </div>
+      <div tabindex="0" class="element element-22">
+        <abbr class="element-name" title="Titanium">Ti</abbr>
+      </div>
+      <div tabindex="0" class="element element-23">
+        <abbr class="element-name" title="Vanadium">V</abbr>
+      </div>
+      <div tabindex="0" class="element element-24">
+        <abbr class="element-name" title="Chromium">Cr</abbr>
+      </div>
+      <div tabindex="0" class="element element-25">
+        <abbr class="element-name" title="Manganese">Mn</abbr>
+      </div>
+      <div tabindex="0" class="element element-26">
+        <abbr class="element-name" title="Iron">Fe</abbr>
+      </div>
+      <div tabindex="0" class="element element-27">
+        <abbr class="element-name" title="Cobalt">Co</abbr>
+      </div>
+      <div tabindex="0" class="element element-28">
+        <abbr class="element-name" title="Nickel">Ni</abbr>
+      </div>
+      <div tabindex="0" class="element element-29">
+        <abbr class="element-name" title="Copper">Cu</abbr>
+      </div>
+      <div tabindex="0" class="element element-30 post-transition-metal">
+        <abbr class="element-name" title="Zinc">Zn</abbr>
+      </div>
+      <div tabindex="0" class="element element-31 post-transition-metal">
+        <abbr class="element-name" title="Gallium">Ga</abbr>
+      </div>
+      <div tabindex="0" class="element element-32 metalloid">
+        <abbr class="element-name" title="Germanium">Ge</abbr>
+      </div>
+      <div tabindex="0" class="element element-33 metalloid">
+        <abbr class="element-name" title="Arsenic">As</abbr>
+      </div>
+      <div tabindex="0" class="element element-34 polyatomic-nonmetal">
+        <abbr class="element-name" title="Selenium">Se</abbr>
+      </div>
+      <div tabindex="0" class="element element-35 diatomic-nonmetal liquid">
+        <abbr class="element-name" title="Bromine">Br</abbr>
+      </div>
+      <div tabindex="0" class="element element-36 noble-gas gas">
+        <abbr class="element-name" title="Krypton">Kr</abbr>
+      </div>
+      <div tabindex="0" class="element element-37 alkali-metal">
+        <abbr class="element-name" title="Rubidium">Rb</abbr>
+      </div>
+      <div tabindex="0" class="element element-38 alkaline-earth-metal">
+        <abbr class="element-name" title="Strontium">Sr</abbr>
+      </div>
+      <div tabindex="0" class="element element-39">
+        <abbr class="element-name" title="Yttrium">Y</abbr>
+      </div>
+      <div tabindex="0" class="element element-40">
+        <abbr class="element-name" title="Zirconium">Zr</abbr>
+      </div>
+      <div tabindex="0" class="element element-41">
+        <abbr class="element-name" title="Niobium">Nb</abbr>
+      </div>
+      <div tabindex="0" class="element element-42">
+        <abbr class="element-name" title="Molybdenum">Mo</abbr>
+      </div>
+      <div tabindex="0" class="element element-43">
+        <abbr class="element-name" title="Technetium">Tc</abbr>
+      </div>
+      <div tabindex="0" class="element element-44">
+        <abbr class="element-name" title="Ruthenium">Ru</abbr>
+      </div>
+      <div tabindex="0" class="element element-45">
+        <abbr class="element-name" title="Rhodium">Rh</abbr>
+      </div>
+      <div tabindex="0" class="element element-46">
+        <abbr class="element-name" title="Palladium">Pd</abbr>
+      </div>
+      <div tabindex="0" class="element element-47">
+        <abbr class="element-name" title="Silver">Ag</abbr>
+      </div>
+      <div tabindex="0" class="element element-48 post-transition-metal">
+        <abbr class="element-name" title="Cadmium">Cd</abbr>
+      </div>
+      <div tabindex="0" class="element element-49 post-transition-metal">
+        <abbr class="element-name" title="Indium">In</abbr>
+      </div>
+      <div tabindex="0" class="element element-50 post-transition-metal">
+        <abbr class="element-name" title="Tin">Sn</abbr>
+      </div>
+      <div tabindex="0" class="element element-51 metalloid">
+        <abbr class="element-name" title="Antimony">Sb</abbr>
+      </div>
+      <div tabindex="0" class="element element-52 metalloid">
+        <abbr class="element-name" title="Tellurium">Te</abbr>
+      </div>
+      <div tabindex="0" class="element element-53 diatomic-nonmetal">
+        <abbr class="element-name" title="Iodine">I</abbr>
+      </div>
+      <div tabindex="0" class="element element-54 noble-gas gas">
+        <abbr class="element-name" title="Xenon">Xe</abbr>
+      </div>
+      <div tabindex="0" class="element element-55 alkali-metal">
+        <abbr class="element-name" title="Cesium">Cs</abbr>
+      </div>
+      <div tabindex="0" class="element element-56 alkaline-earth-metal">
+        <abbr class="element-name" title="Barium">Ba</abbr>
+      </div>
+      <div tabindex="0" class="element element-57 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Lanthanum">La</abbr>
+      </div>
+      <div tabindex="0" class="element element-58 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Cerium">Ce</abbr>
+      </div>
+      <div tabindex="0" class="element element-59 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Praseodymium">Pr</abbr>
+      </div>
+      <div tabindex="0" class="element element-60 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Neodymium">Nd</abbr>
+      </div>
+      <div tabindex="0" class="element element-61 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Promethium">Pm</abbr>
+      </div>
+      <div tabindex="0" class="element element-62 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Samarium">Sm</abbr>
+      </div>
+      <div tabindex="0" class="element element-63 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Europium">Eu</abbr>
+      </div>
+      <div tabindex="0" class="element element-64 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Gadolinium">Gd</abbr>
+      </div>
+      <div tabindex="0" class="element element-65 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Terbium">Tb</abbr>
+      </div>
+      <div tabindex="0" class="element element-66 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Dysprosium">Dy</abbr>
+      </div>
+      <div tabindex="0" class="element element-67 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Holmium">Ho</abbr>
+      </div>
+      <div tabindex="0" class="element element-68 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Erbium">Er</abbr>
+      </div>
+      <div tabindex="0" class="element element-69 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Thulium">Tm</abbr>
+      </div>
+      <div tabindex="0" class="element element-70 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Ytterbium">Yb</abbr>
+      </div>
+      <div tabindex="0" class="element element-71 lanthanide lanthanide-group">
+        <abbr class="element-name" title="Lutetium">Lu</abbr>
+      </div>
+      <div tabindex="0" class="element element-72">
+        <abbr class="element-name" title="Hafnium">Hf</abbr>
+      </div>
+      <div tabindex="0" class="element element-73">
+        <abbr class="element-name" title="Tantalum">Ta</abbr>
+      </div>
+      <div tabindex="0" class="element element-74">
+        <abbr class="element-name" title="Tungsten">W</abbr>
+      </div>
+      <div tabindex="0" class="element element-75">
+        <abbr class="element-name" title="Rhenium">Re</abbr>
+      </div>
+      <div tabindex="0" class="element element-76">
+        <abbr class="element-name" title="Osmium">Os</abbr>
+      </div>
+      <div tabindex="0" class="element element-77">
+        <abbr class="element-name" title="Iridium">Ir</abbr>
+      </div>
+      <div tabindex="0" class="element element-78">
+        <abbr class="element-name" title="Platinum">Pt</abbr>
+      </div>
+      <div tabindex="0" class="element element-79">
+        <abbr class="element-name" title="Gold">Au</abbr>
+      </div>
+      <div tabindex="0" class="element element-80 post-transition-metal liquid">
+        <abbr class="element-name" title="Mercury">Hg</abbr>
+      </div>
+      <div tabindex="0" class="element element-81 post-transition-metal">
+        <abbr class="element-name" title="Thallium">Tl</abbr>
+      </div>
+      <div tabindex="0" class="element element-82 post-transition-metal">
+        <abbr class="element-name" title="Lead">Pb</abbr>
+      </div>
+      <div tabindex="0" class="element element-83 post-transition-metal">
+        <abbr class="element-name" title="Bismuth">Bi</abbr>
+      </div>
+      <div tabindex="0" class="element element-84 post-transition-metal">
+        <abbr class="element-name" title="Polonium">Po</abbr>
+      </div>
+      <div tabindex="0" class="element element-85 metalloid">
+        <abbr class="element-name" title="Astatine">At</abbr>
+      </div>
+      <div tabindex="0" class="element element-86 noble-gas gas">
+        <abbr class="element-name" title="Radon">Rn</abbr>
+      </div>
+      <div tabindex="0" class="element element-87 alkali-metal">
+        <abbr class="element-name" title="Francium">Fr</abbr>
+      </div>
+      <div tabindex="0" class="element element-88 alkaline-earth-metal">
+        <abbr class="element-name" title="Radium">Ra</abbr>
+      </div>
+      <div tabindex="0" class="element element-89 actinide actinide-group">
+        <abbr class="element-name" title="Actinium">Ac</abbr>
+      </div>
+      <div tabindex="0" class="element element-90 actinide actinide-group">
+        <abbr class="element-name" title="Thorium">Th</abbr>
+      </div>
+      <div tabindex="0" class="element element-91 actinide actinide-group">
+        <abbr class="element-name" title="Protactinium">Pa</abbr>
+      </div>
+      <div tabindex="0" class="element element-92 actinide actinide-group">
+        <abbr class="element-name" title="Uranium">U</abbr>
+      </div>
+      <div tabindex="0" class="element element-93 actinide actinide-group">
+        <abbr class="element-name" title="Neptunium">Np</abbr>
+      </div>
+      <div tabindex="0" class="element element-94 actinide actinide-group">
+        <abbr class="element-name" title="Plutonium">Pu</abbr>
+      </div>
+      <div tabindex="0" class="element element-95 actinide actinide-group">
+        <abbr class="element-name" title="Americium">Am</abbr>
+      </div>
+      <div tabindex="0" class="element element-96 actinide actinide-group">
+        <abbr class="element-name" title="Curium">Cm</abbr>
+      </div>
+      <div tabindex="0" class="element element-97 actinide actinide-group">
+        <abbr class="element-name" title="Berkelium">Bk</abbr>
+      </div>
+      <div tabindex="0" class="element element-98 actinide actinide-group">
+        <abbr class="element-name" title="Californium">Cf</abbr>
+      </div>
+      <div tabindex="0" class="element element-99 actinide actinide-group">
+        <abbr class="element-name" title="Einsteinium">Es</abbr>
+      </div>
+      <div tabindex="0" class="element element-100 actinide actinide-group">
+        <abbr class="element-name" title="Fermium">Fm</abbr>
+      </div>
+      <div tabindex="0" class="element element-101 actinide actinide-group">
+        <abbr class="element-name" title="Mendelevium">Md</abbr>
+      </div>
+      <div tabindex="0" class="element element-102 actinide actinide-group">
+        <abbr class="element-name" title="Nobelium">No</abbr>
+      </div>
+      <div tabindex="0" class="element element-103 actinide actinide-group">
+        <abbr class="element-name" title="Lawrencium">Lr</abbr>
+      </div>
+      <div tabindex="0" class="element element-104">
+        <abbr class="element-name" title="Rutherfordium">Rf</abbr>
+      </div>
+      <div tabindex="0" class="element element-105">
+        <abbr class="element-name" title="Dubnium">Db</abbr>
+      </div>
+      <div tabindex="0" class="element element-106">
+        <abbr class="element-name" title="Seaborgium">Sg</abbr>
+      </div>
+      <div tabindex="0" class="element element-107">
+        <abbr class="element-name" title="Bohrium">Bh</abbr>
+      </div>
+      <div tabindex="0" class="element element-108">
+        <abbr class="element-name" title="Hassium">Hs</abbr>
+      </div>
+      <div tabindex="0" class="element element-109">
+        <abbr class="element-name" title="Meitnerium">Mt</abbr>
+      </div>
+      <div tabindex="0" class="element element-110">
+        <abbr class="element-name" title="Darmstadtium">Ds</abbr>
+      </div>
+      <div tabindex="0" class="element element-111">
+        <abbr class="element-name" title="Roentgenium">Rg</abbr>
+      </div>
+      <div tabindex="0" class="element element-112 post-transition-metal">
+        <abbr class="element-name" title="Copernicium">Cn</abbr>
+      </div>
+      <div tabindex="0" class="element element-113">
+        <abbr class="element-name" title="Nihonium">Nh</abbr>
+      </div>
+      <div tabindex="0" class="element element-114">
+        <abbr class="element-name" title="Flerovium">Fl</abbr>
+      </div>
+      <div tabindex="0" class="element element-115">
+        <abbr class="element-name" title="Moscovium">Mc</abbr>
+      </div>
+      <div tabindex="0" class="element element-116">
+        <abbr class="element-name" title="Livermorium">Lv</abbr>
+      </div>
+      <div tabindex="0" class="element element-117">
+        <abbr class="element-name" title="Tennessine">Ts</abbr>
+      </div>
+      <div tabindex="0" class="element element-118">
+        <abbr class="element-name" title="Oganesson">Og</abbr>
+      </div>
+
+      <aside class="legend">
+        <h2>Legend</h2>
+        <ul>
+          <li class="alkali-metal">Alkali metal</li>
+          <li class="alkaline-earth-metal">Alkaline earth metal</li>
+          <li class="lanthanide">Lanthanide</li>
+          <li class="actinide">Actinide</li>
+          <li class="metalloid">Metalloid</li>
+          <li class="post-transition-metal">Post-transition metal</li>
+          <li class="polyatomic-nonmetal">Polyatomic nonmetal</li>
+          <li class="diatomic-nonmetal">Diatomic nonmetal</li>
+          <li class="noble-gas">Noble gas</li>
+        </ul>
+      </aside>
     </section>
-</main>
+  </main>
+</body>
+<script src="script.js"></script>
+
+</html>

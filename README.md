@@ -7,3 +7,7 @@ My attempt to learn CSS Grid by creating a periodic table of elements using [CSS
 All elements of the periodic table are in `<div>` elements inside a `<section>`. There are 119 HTML elements in total (118 elements + an `<aside>` for the legend contents).
 
 There are no wrapping elements for periods (rows) and groups (columns). The purpose of this is to produce the desired layout using CSS Grid Layout.
+
+## Changlog
+
+* 2024-04-24 (Teacher Isaac) - Added Highlight corresponding legend when mouse is over an element
