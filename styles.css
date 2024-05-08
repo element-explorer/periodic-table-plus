@@ -3,6 +3,7 @@
 }
 
 html {
+    font-size: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -14,6 +15,8 @@ html {
     grid-template-rows: repeat(7, [period] 1fr) [row6x] 1fr [row7x] 1fr;
     grid-gap: 0.5em;
     counter-reset: atomic-number;
+    scale: 1 1.35;
+    margin: 100px 10px;
 }
 
 /* Pseudo-element to force elements 57 and 89 to shift right; see https://stackoverflow.com/a/49566478/404623 */
@@ -136,13 +139,11 @@ html {
 
 .lanthanide { background-color: pink; }
 .actinide { background-color: hotpink; }
-.alkali-metal { background-color: #f66; }
+.alkali-metal { background-color: rgb(255, 156, 26); }
 .alkaline-earth-metal { background-color: #ffdead; }
-.diatomic-nonmetal { background-color: #e7ff8f; }
+.diatomic-nonmetal { background-color: #15fe4f; }
 .polyatomic-nonmetal { background-color: #a1ffc3; }
-.post-transition-metal { background-color: lightgray; }
-.metalloid { background-color: #cc9; }
+.post-transition-metal { background-color: rgb(0, 174, 255); }
+.metalloid { background-color: rgb(0, 255, 187); }
 .noble-gas { background-color: #c0ffff; }
-
-.liquid { color: darkgreen; }
-.gas { color: #c00; }
+.transition-metal { background-color: red;}
