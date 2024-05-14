@@ -55,7 +55,7 @@ body {
     font-size: 0.8rem;
     display: block;
     content: counter(atomic-number);
-    color: black;
+    color: rgb(173, 162, 162);
 }
 
 .element-name::after {
@@ -142,14 +142,25 @@ body {
 
 /* COLORS */
 
-.lanthanide { border-color: hotpink; color:hotpink; text-shadow: 0px 0px 5px hotpink; }
-.actinide { border-color:magenta; color: magenta; text-shadow: 0px 0px 5px magenta; }
-.alkali-metal { border-color: goldenrod; color: goldenrod; text-shadow: 0px 0px 5px goldenrod; }
-.alkaline-earth-metal { border-color: #ffdead; color: #ffdead; text-shadow: 0px 0px 5px #ffdead; }
-.diatomic-nonmetal { border-color: #15fe4f; color: #15fe4f; text-shadow: 0px 0px 5px #15fe4f; }
-.polyatomic-nonmetal { border-color: #a1ffc3; color: #a1ffc3; text-shadow: 0px 0px 5px #a1ffc3; }
-.post-transition-metal { border-color: rgb(0, 174, 255); color: rgb(0, 174, 255); text-shadow: 0px 0px 5px rgb(0, 174, 255); }
-.metalloid { border-color: rgb(0, 255, 187); color: rgb(0, 255, 187); text-shadow: 0px 0px 5px rgb(0, 255, 187); }
-.noble-gas { border-color: cyan; color: cyan; text-shadow: 0px 0px 5px cyan; }
-.transition-metal { border-color: orangered; color: orangered; text-shadow: 0px 0px 5px orangered; }
-.unknown-properties { border-color: rgb(255, 255, 255); color: rgb(255, 255, 255); text-shadow: 0px 0px 5px white; }
+.lanthanide { border-color: hotpink; color:hotpink; }
+.lanthanide:hover { text-shadow: 0px 0px 5px hotpink; }
+.actinide { border-color:magenta; color: magenta; }
+.actinide:hover { text-shadow: 0px 0px 5px magenta; }
+.alkali-metal { border-color: goldenrod; color: goldenrod; }
+.alkali-metal:hover { text-shadow: 0px 0px 5px goldenrod; }
+.alkaline-earth-metal { border-color: #ffdead; color: #ffdead; }
+.alkaline-earth-metal:hover { text-shadow: 0px 0px 5px #ffdead; }
+.diatomic-nonmetal { border-color: #15fe4f; color: #15fe4f; }
+.diatomic-nonmetal:hover { text-shadow: 0px 0px 5px #15fe4f; }
+.polyatomic-nonmetal { border-color: #a1ffc3; color: #a1ffc3; }
+.polyatomic-nonmetal:hover { text-shadow: 0px 0px 5px #a1ffc3; }
+.post-transition-metal { border-color: rgb(0, 174, 255); color: rgb(0, 174, 255); }
+.post-transition-metal:hover { text-shadow: 0px 0px 5px rgb(0, 174, 255); }
+.metalloid { border-color: rgb(0, 255, 187); color: rgb(0, 255, 187); }
+.metalloid:hover { text-shadow: 0px 0px 5px rgb(0, 255, 187); }
+.noble-gas { border-color: cyan; color: cyan; }
+.noble-gas:hover { text-shadow: 0px 0px 5px cyan; }
+.transition-metal { border-color: orangered; color: orangered; }
+.transition-metal:hover { text-shadow: 0px 0px 5px orangered; }
+.unknown { border-color: rgb(255, 255, 255); color: rgb(255, 255, 255); }
+.unknown:hover { text-shadow: 0px 0px 5px white; }
