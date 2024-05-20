@@ -11,7 +11,7 @@ html {
 /* LAYOUT */
 
 body {
-    background-color: rgb(44, 44, 44);
+    background-color:rgb(16, 16, 16) ;
 }
 
 .periodic-table {
@@ -164,3 +164,4 @@ body {
 .transition-metal:hover { text-shadow: 0px 0px 5px orangered; }
 .unknown { border-color: rgb(255, 255, 255); color: rgb(255, 255, 255); }
 .unknown:hover { text-shadow: 0px 0px 5px white; }
+.periodic-table {color: white;}
